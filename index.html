@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fashion2</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="Fashion" />
+    <meta name="keywords" content="Fashion 2021"/>
+</head>
+<body>
+
+<!-- Sprite -->
+<svg style="display: none;">
+    <symbol id="facebook" viewBox="0 0 155.139 155.139">
+        <g>
+            <path d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184
+        c0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452
+        v20.341H37.29v27.585h23.814v70.761H89.584z"/>
+        </g>
+    </symbol>
+
+    <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+            c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+            c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+            c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+            c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+            c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+            C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+            C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </g>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 512 512.00006">
+        <g>
+            <path d="m261.039062 512c-1.695312 0-3.390624 0-5.097656-.007812-40.132812.097656-77.214844-.921876-113.277344-3.117188-33.0625-2.011719-63.242187-13.4375-87.28125-33.039062-23.195312-18.914063-39.035156-44.488282-47.078124-76.003907-7-27.4375-7.371094-54.371093-7.726563-80.421875-.257813-18.691406-.5234375-40.839844-.578125-63.363281.0546875-22.617187.320312-44.765625.578125-63.457031.355469-26.046875.726563-52.980469 7.726563-80.421875 8.042968-31.515625 23.882812-57.089844 47.078124-76.003907 24.039063-19.601562 54.21875-31.027343 87.285157-33.039062 36.0625-2.191406 73.152343-3.2148438 113.371093-3.1171875 40.144532-.0859375 77.214844.9257815 113.277344 3.1171875 33.0625 2.011719 63.242188 13.4375 87.28125 33.039062 23.199219 18.914063 39.035156 44.488282 47.078125 76.003907 7 27.4375 7.371094 54.375 7.726563 80.421875.257812 18.691406.527344 40.839844.578125 63.363281v.09375c-.050781 22.523437-.320313 44.671875-.578125 63.363281-.355469 26.046875-.722656 52.980469-7.726563 80.421875-8.042969 31.515625-23.878906 57.089844-47.078125 76.003907-24.039062 19.601562-54.21875 31.027343-87.28125 33.039062-34.535156 2.101562-70.011718 3.125-108.277344 3.125zm-5.097656-40.007812c39.480469.09375 75.730469-.902344 110.945313-3.042969 25-1.519531 46.675781-9.632813 64.433593-24.113281 16.414063-13.386719 27.71875-31.855469 33.597657-54.894532 5.828125-22.839844 6.164062-47.363281 6.488281-71.078125.253906-18.566406.519531-40.558593.574219-62.863281-.054688-22.308594-.320313-44.296875-.574219-62.863281-.324219-23.714844-.660156-48.238281-6.488281-71.082031-5.878907-23.039063-17.183594-41.507813-33.597657-54.894532-17.757812-14.476562-39.433593-22.589844-64.433593-24.109375-35.214844-2.144531-71.464844-3.132812-110.851563-3.046875-39.472656-.09375-75.726562.902344-110.941406 3.046875-25 1.519531-46.675781 9.632813-64.433594 24.109375-16.414062 13.386719-27.71875 31.855469-33.597656 54.894532-5.828125 22.84375-6.164062 47.363281-6.488281 71.082031-.253907 18.582031-.519531 40.585937-.574219 62.910156.054688 22.226563.320312 44.234375.574219 62.816406.324219 23.714844.660156 48.238281 6.488281 71.078125 5.878906 23.039063 17.183594 41.507813 33.597656 54.894532 17.757813 14.476562 39.433594 22.589843 64.433594 24.109374 35.214844 2.144532 71.476562 3.144532 110.847656 3.046876zm-.953125-90.992188c-68.921875 0-125-56.074219-125-125s56.078125-125 125-125c68.925781 0 125 56.074219 125 125s-56.074219 125-125 125zm0-210c-46.867187 0-85 38.132812-85 85s38.132813 85 85 85c46.871094 0 85-38.132812 85-85s-38.128906-85-85-85zm139-80c-16.566406 0-30 13.429688-30 30s13.433594 30 30 30c16.570313 0 30-13.429688 30-30s-13.429687-30-30-30zm0 0"/>
+        </g>
+    </symbol>
+</svg>
+
+<!-- Site-container -->
+<div class="site-container">
+
+<!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="langs">
+                <a class="langs__link opacity" href="#">Eng</a>
+                <span class="slash">/</span>
+                <a class="langs__link opacity" href="#">Esp</a>
+            </div>
+
+            <div class="header-top__social">
+                <a class="header-top__social__link opacity" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="header-top__social__link opacity" href="https://www.twitter.com/" target="_blank">Twitter</a>
+                <a class="header-top__social__link opacity" href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+
+            <div class="header-top__icons">
+                <a class="header-top__item" href="https://www.facebook.com/" target="_blank">
+                    <svg class="header-top__icon">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+                <a class="header-top__item" href="https://www.twitter.com/" target="_blank">
+                    <svg class="header-top__icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+                <a class="header-top__item" href="https://www.instagram.com/" target="_blank">
+                    <svg class="header-top__icon">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+        </div><!--  /header-top  -->
+
+        <div class="header-bottom">
+            <div class="header-bottom__logo">
+                <img class="header-bottom__image" src="img/header-logo.png" alt="">
+            </div>
+
+            <nav class="header-bottom__nav">
+                <a class="header-bottom__link opacity" href="#">New collection</a>
+                <a class="header-bottom__link opacity" href="#">Shop</a>
+                <a class="header-bottom__link opacity" href="#">About us</a>
+                <a class="header-bottom__link opacity" href="#">Contact</a>
+            </nav>
+
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">New collection</a></li>
+                    <li><a class="menu__item" href="#">Shop</a></li>
+                    <li><a class="menu__item" href="#">About us</a></li>
+                    <li><a class="menu__item" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div><!--  /header-bottom  -->
+    </header>
+
+<!-- Collection -->
+    <div class="collection">
+        <div class="collection__inner">
+           <div class="collection__section">
+               <picture class="collection__image">
+                    <source srcset="img/photo-1.webp" media="(max-width: 1024px)" type="image/webp">
+                    <img class="collection__photo" src="img/photo-1.jpg" alt="">
+               </picture>
+               <a class="collection__link opacity" href="#">See new collection</a>
+           </div>
+
+           <div class="collection__section section--down">
+                <div class="collection__subtitle">
+                    <p>21 /2022</p>
+                    <p>Collection</p>
+                </div>
+                <div class="collection__rectangle">
+                   <div class="collection__title">
+                       <p>New vapor</p>
+                       <p>Collection</p>
+                   </div>
+                </div>
+                <picture class="collection__image">
+                    <source srcset="img/photo-2.webp" media="(max-width: 1024px)" type="image/webp">
+                    <img class="collection__photo" src="img/photo-2.jpg" alt="">
+                </picture>
+           </div>
+        </div><!--  /collection__inner  -->
+    </div><!--  /collection  -->
+
+<!--  About  -->
+    <div class="about">
+        <div class="container">
+            <h2 class="about__title">About us</h2>
+            <div class="about__items">
+                <div class="about__rectangle">
+                    <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </div>
+                    <a class="about__link opacity" href="#">Read more</a>
+                </div>
+                <picture class="about__image">
+                    <source srcset="img/photo-3.webp" media="(max-width: 1024px)" type="image/webp">
+                    <img class="about__photo" src="img/photo-3.jpg" alt="">
+                </picture>
+            </div>
+        </div>
+    </div>
+
+ <!-- Description -->
+    <div class="description">
+        <div class="description__items">
+            <div class="description__title">
+                <p>Sustainable</p>
+                <p>Fashion</p>
+            </div>
+            <div class="description__text">
+                <p>We design</p>
+                <p>With organic and</p>
+                <p>Environmentally</p>
+                <p>Friendly</p>
+                <p>Materials</p>
+            </div>
+            <a class="description__link opacity" href="#">Read more</a>
+        </div>
+        <picture>
+            <source scrset="img/photo-4.webp" media="(max-width: 1024px)" type="image/webp">
+            <img class="description__photo" src="img/photo-4.jpg" alt="">
+        </picture>
+    </div>
+
+<!-- Presentation -->
+    <div class="presentation">
+        <h2 class="presentation__title">Fall / Winter Fashion Week</h2>
+        <div class="presentation__background">
+                <div class="presentation__text">
+                    <p>See the full </p>
+                    <p>Show online</p>
+                </div>
+                <a class="presentation__link opacity" href="#">Here</a>
+        </div>
+    </div>
+
+<!-- Newsletter -->
+    <div class="container">
+        <div class="newsletter">
+            <div class="newsletter__content">
+                <h2 class="newsletter__title">Newsletter</h2>
+                <div class="newsletter__text">
+                    <p>Subscribe to our</p>
+                    <p>newsletter to keep up to</p>
+                    <p>date with our news</p>
+                </div>
+            </div>
+            <div class="newsletter__items">
+                <form action="/" method="post">
+                    <input class="newsletter__input" type="email" name="email" placeholder="E-mail">
+                </form>
+                <a class="newsletter__link opacity" href="#">Subscribe</a>
+            </div>
+        </div>
+    </div>
+
+<!--  Stores  -->
+    <div class="container">
+        <div class="stores">
+            <h2 class="stores__title">Visit our stores</h2>
+            <div class="stores__inner">
+                <address class="stores__items">
+                    <div class="stores__city">Rome</div>
+                    <div class="stores__address">
+                        <p>Name St number 1</p>
+                        <p>123456, City</p>
+                        <p>Country</p>
+                        <p>+00 123 456 789</p>
+                    </div>
+                </address>
+
+                <address class="stores__items">
+                    <div class="stores__city">Milan</div>
+                    <div class="stores__address">
+                        <p>Name St number 1</p>
+                        <p>123456, City</p>
+                        <p>Country</p>
+                        <p>+00 123 456 789</p>
+                    </div>
+                </address>
+
+                <address class="stores__items">
+                    <div class="stores__city">Paris</div>
+                    <div class="stores__address">
+                        <p>Name St number 1</p>
+                        <p>123456, City</p>
+                        <p>Country</p>
+                        <p>+00 123 456 789</p>
+                    </div>
+                </address>
+
+                <address class="stores__items">
+                    <div class="stores__city">London</div>
+                    <div class="stores__address">
+                        <p>Name St number 1</p>
+                        <p>123456, City</p>
+                        <p>Country</p>
+                        <p>+00 123 456 789</p>
+                    </div>
+                </address>
+            </div><!--  /stores__inner  -->
+        </div><!--  /stores  -->
+    </div><!--  /container  -->
+
+<!-- Contact -->
+    <div class="container">
+        <div class="contact">
+            <div class="contact__content">
+                <h2 class="contact__title">Contact</h2>
+                <div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
+            </div>
+
+            <div class="contact__items">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <input class="contact__input" type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input class="contact__input" type="email" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                    <textarea class="contact__textarea" name="name" placeholder="Message"></textarea>
+                    </div>
+                </form>
+            <a class="contact__link opacity" href="#">Contact us</a>
+            </div>
+        </div>
+    </div>
+
+<!--  Footer  -->
+    <div class="footer">
+        <div class="container">
+            <img class="footer__logo" src="img/footer-logo.png" alt="">
+            <div class="footer__items">
+                <nav class="footer__nav">
+                    <a class="footer__nav__link opacity" href="#">New collection</a>
+                    <a class="footer__nav__link opacity" href="#">Shop</a>
+                    <a class="footer__nav__link opacity" href="#">About us</a>
+                    <a class="footer__nav__link opacity" href="#">Contact</a>
+                </nav>
+
+                <div class="footer__info">
+                    <a class="footer__info__link opacity" href="#">Faqs</a>
+                    <a class="footer__info__link opacity" href="#">Privacy policy</a>
+                </div>
+
+                <address class="footer__address">
+                    <div class="footer__address__text">+00 123 456 789</div>
+                    <div class="footer__address__text">Name Street
+                    <p>123456 city name</p>
+                    </div>
+                    <div class="footer__address__text">Country</div>
+                </address>
+            </div>
+
+                <div class="footer__bottom">
+                    <div class="copyright__text">Copyright | your name</div>
+                    <div class="footer__social">
+                        <a class="footer__social__link opacity" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                        <a class="footer__social__link opacity" href="https://www.twitter.com/" target="_blank">Twitter</a>
+                        <a class="footer__social__link opacity" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </div>
+                 <div class="footer__bottom__icons">
+                <a class="footer__bottom__item" href="https://www.facebook.com/" target="_blank">
+                    <svg class="footer__bottom__icon">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+                <a class="footer__bottom__item" href="https://www.twitter.com/" target="_blank">
+                    <svg class="footer__bottom__icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+                <a class="footer__bottom__item" href="https://www.instagram.com/" target="_blank">
+                    <svg class="footer__bottom__icon">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+            </div>
+        </div><!--  /container  -->
+    </div><!--  /footer  -->
+</div><!-- /main-container -->
+</body>
+</html>
